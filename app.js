@@ -22,8 +22,9 @@ async function searchVideo(){
 var statik  = JSON.parse(localStorage.getItem("localdata")) || [];
 
 const appendVideos = (items) =>{
+    result_div.innerHTML="";
     items.forEach((elem)=>{
-
+        
         let {
             id:{videoId},
         } = elem;
